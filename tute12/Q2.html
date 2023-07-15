@@ -1,0 +1,32 @@
+<!--20020554-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 2</title>
+
+    <script type="text/javascript">
+        function sum(array){
+            var sum=0;
+            for(var i=0;i<array.length;i++){
+                sum+=array[i];
+            }
+            return sum;
+        }
+        
+        function mean(array){
+            var avg;
+            avg=sum(array)/array.length;
+            return avg;
+        }
+
+        const array=[20,30,40,50,10];
+
+        document.write("Sum: ",sum(array));
+        document.write("<br>")
+        document.write("Mean: ",mean(array));
+    </script>
+</head>
+<body>
+  
+</body>
+</html>

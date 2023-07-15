@@ -1,0 +1,41 @@
+<!--20020554-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Question 3</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+    
+    
+
+    function calculateBMI(){
+        var height=document.getElementById("height").value;
+    var weight=document.getElementById("weight").value;
+        var bmi=weight/(height*height);
+        alert("Your BMI: "+bmi);
+    }
+
+    function validation(){
+        var height=document.getElementById("height").value;
+        var weight=document.getElementById("weight").value;
+
+        if(height>0 &&  weight>0){
+            calculateBMI();
+        }else{
+            alert("Enter Valid Data!!!");
+        }
+        
+    }
+    </script>
+    <form>
+        <label for="height">Height (m) : </label>
+        <input type="text" id="height" name="height" value=""><br>
+        <label for="weight">Weight (kg) : </label>
+        <input type="text" id="weight" name="weight" value=""><br><br>
+        <input type="submit" id="button" value="Calculate" onclick="validation()">
+    </form>
+
+</body>
+</html>
